@@ -10,7 +10,7 @@
     :root{
         --color:#dbdfde;
         --color2:#181a1d;
-        --colorBackground: #b49e1f;
+        --colorBackground: #0c8108;
         --box1: #ffffff;
         --box2: #681212;
         --box3: #201e81;
@@ -36,19 +36,17 @@
 
     .app {
             display:                grid;
-            grid-template-columns:  1fr 1fr 1fr 1fr;
-            grid-template-rows:     100px 200px 400px;
-           
+            grid-template-columns:  100fr 100fr 100fr 100fr 100fr;
+            grid-template-rows:     100px 100px 100px;
             grid-template-areas:
-                "r m m r"
-                "r m m r"
-                "r m m r";
-                
+                "r m m m t"
+                "r m m m t"
+                "r m m m t";    
     }
 
 .top-left {
     grid-area: r;
-    background-color: green;
+    background-color: rgb(43, 43, 43);
 }
 .top-right {
     grid-area: m;
@@ -78,10 +76,10 @@
     <p  class ="color"> box4</p>
    </div>
     
-   <div class="bottom-left">
+   <!-- <div class="bottom-left">
     <p  class ="color">box3</p>
     <p  class ="color"> box3</p>
-   </div>
+   </div> -->
    <div class = "top-right">
         <h2  class ="color2">box2</h2>
         <h2  class ="color2">box2</h2>
