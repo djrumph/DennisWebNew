@@ -36,7 +36,7 @@
 
     .app {
             display:                grid;
-            grid-template-columns:  100fr 100fr 100fr 100fr 100fr;
+            grid-template-columns:  100fr 200fr 200fr 200fr 100fr;
             grid-template-rows:     100px 100px 100px;
             grid-template-areas:
                 "r m m m t"
@@ -46,10 +46,12 @@
 
 .top-left {
     grid-area: r;
+    height:70vh;
     background-color: rgb(43, 43, 43);
 }
 .top-right {
     grid-area: m;
+    height:100vh;
     background-color: rgb(49, 49, 49);
 }
 .bottom-left {
@@ -58,6 +60,7 @@
 }
 .bottom-right {
     grid-area: t;
+    height:40vh;
     background-color: var(--box4);
 }
 
