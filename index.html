@@ -39,9 +39,9 @@
             grid-template-columns:  100fr 200fr 200fr 200fr 100fr;
             grid-template-rows:     100px 100px 100px;
             grid-template-areas:
-                "r m m m t"
-                "r m m m t"
-                "r m m m t";    
+                "r b m m t"
+                "r b m m t"
+                "r b m m t";    
     }
 
 .top-left {
@@ -67,8 +67,18 @@
 .middle{
     grid-area: b;
     background-color: aquamarine;
+    z-index: 10;
 }
 
+.top-boxes{
+    grid-area:b1;
+    background-color: #FFFFFF;
+
+}
+
+.bottom-boxes{
+
+}
 
     
     </style>
@@ -78,11 +88,13 @@
     <h1 class ="color2" >box4</h1>
     <p  class ="color"> box4</p>
    </div>
+
+
     
-   <!-- <div class="bottom-left">
+   <div class="top-boxes">
     <p  class ="color">box3</p>
     <p  class ="color"> box3</p>
-   </div> -->
+   </div>
    <div class = "top-right">
         <h2  class ="color2">box2</h2>
         <h2  class ="color2">box2</h2>
@@ -93,13 +105,12 @@
     <h2  class ="color2">box2</h2>
     
     </div>
-<!-- 
+
     <div class = "middle">
             <h2  class ="color2" style="position: relative; z-index: 1;">Seasons Greetings?</h2>
             <p  class ="color2" style="font-size: 30px; position: relative; z-index: 1;"><strong>not even close to christmas yet bruh</strong></p>
-            <canvas id="sky" style="margin-top:-62px;"></canvas>
             
-    </div> -->
+    </div>
 
 
 </body>
