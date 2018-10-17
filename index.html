@@ -39,9 +39,10 @@
             grid-template-columns:  100fr 200fr 200fr 200fr 100fr;
             grid-template-rows:     100px 100px 100px;
             grid-template-areas:
-                "r b m m t"
-                "r b m m t"
-                "r b m m t";    
+                "r m m m t"
+                "r m m m t"
+                "r m m m t";    
+                grid-gap: 1px;
     }
 
 .top-left {
@@ -68,6 +69,9 @@
     grid-area: b;
     background-color: aquamarine;
     z-index: 10;
+    position:absolute;
+    padding: 0 300px 0 0 ;
+    margin: 0 300px 0 0;
 }
 
 .top-boxes{
@@ -107,8 +111,8 @@
     </div>
 
     <div class = "middle">
-            <h2  class ="color2" style="position: relative; z-index: 1;">Seasons Greetings?</h2>
-            <p  class ="color2" style="font-size: 30px; position: relative; z-index: 1;"><strong>not even close to christmas yet bruh</strong></p>
+            <h2  class ="color2" style="position: relative; z-index: 1;">Test</h2>
+            <p  class ="color2" style="font-size: 30px; position: relative; z-index: 1;"><strong>Test</strong></p>
             
     </div>
 
