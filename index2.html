@@ -177,7 +177,7 @@ li a:hover:not(.active) {
    color: rgb(141, 141, 141); 
 
 }
-
+/* ANIMATIONS */
  @-webkit-keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -195,6 +195,24 @@ li a:hover:not(.active) {
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
 }
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+
 
 
 
@@ -222,7 +240,7 @@ li a:hover:not(.active) {
             
             
             
-            <li><a href="#about">CALL NOW!</a></li>
+            <li class="animated pulse"><a href="#about">CALL NOW!</a></li>
             <li><a href="#about">Contact</a></li>
             <li><a href="#about">About</a></li>
             <li><a class="active" href="#home">Home</a></li>
